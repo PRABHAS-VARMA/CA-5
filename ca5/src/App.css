@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #14213d;
+  font-family: 'Inter', sans-serif;
+}
+
+.books {
+  margin-top: 120px;
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row; 
+}
+
+.book {
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  margin: 10px; 
+  padding: 10px;
+  display: flex;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content img {
+  max-width: 200px;
+  justify-content: center;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fca311;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  color: #034732;
+}
+
+h4 {
+  margin: 10px 0;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: 130px;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #034732;
+}
+
+input {
+  width: 400px;
+  height: 35px;
+  padding: 8px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #034732;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+#searchButton {
+  background-color: #14213d;
+  border-radius: 0px 20px 20px 0px;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 35px;
+  padding: 10px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+#modalText{
+  color: #14213d;
+}
